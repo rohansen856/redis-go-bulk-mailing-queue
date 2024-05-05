@@ -22,7 +22,7 @@ func NewSender(cfg *config.Config, tmpl *templates.Manager) *Sender {
 }
 
 func (s *Sender) SendEmail(to, subject, templateName string, data map[string]interface{}) error {
-	body, err := s.templates.Render(templateName, data)
+	body, err := s.templates.RenderWithSafeURLs(templateName, data)
 	if err != nil {
 		return fmt.Errorf("error rendering template: %w", err)
 	}

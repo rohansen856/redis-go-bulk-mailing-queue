@@ -70,3 +70,16 @@ func (m *Manager) Render(name string, data map[string]interface{}) (string, erro
 
 	return buf.String(), nil
 }
+
+func (m *Manager) RenderWithSafeURLs(name string, data map[string]interface{}) (string, error) {
+	safeData := make(map[string]interface{})
+	for key, value := range data {
+		safeData[key] = value
+	}
+
+	if resetUrl, ok := data["resetUrl"].(string); ok {
+		safeData["resetUrl"] = template.URL(resetUrl)
+	}
+
+	return m.Render(name, safeData)
+}
