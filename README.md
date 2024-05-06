@@ -1,29 +1,29 @@
-# MailFlow - Serviço de Envio de E-mails Assíncrono
+# MailFlow - Asynchronous Email Sending Service
 
-Um microserviço para envio de e-mails em segundo plano, construído com Go, Redis (para fila) e SMTP.
+A microservice for background email sending, built with Go, Redis (for queue), and SMTP.
 
-## Características
+## Features
 
-- Envio assíncrono de e-mails usando filas Redis
-- Templates HTML personalizáveis
-- API RESTful para solicitações de envio
-- Containerização com Docker
+- Asynchronous email sending using Redis queues
+- Customizable HTML templates
+- RESTful API for sending requests
+- Docker containerization
 
-## Requisitos
+## Requirements
 
 - Go 1.16+
 - Redis
-- Servidor SMTP (ou serviço como SendGrid, Mailgun, etc.)
+- SMTP Server
 
-## Configuração
+## Setup
 
-1. Clone o repositório
-2. Copie `.env.example` para `.env` e configure as variáveis
-3. Execute `go mod download` para instalar as dependências
+1. Clone the repository
+2. Copy `.env.example` to `.env` and configure the variables
+3. Run `go mod download` to install dependencies
 
-## Executando o Serviço
+## Running the Service
 
-### Localmente
+### Locally
 
 ```bash
 go run cmd/server/main.go
