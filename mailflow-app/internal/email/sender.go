@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"net/smtp"
 
-	"github.com/afonso-borges/mailflow/internal/config"
-	"github.com/afonso-borges/mailflow/internal/templates"
+	"github.com/rohansen856/redis-go-bulk-mailing-queue/internal/config"
+	"github.com/rohansen856/redis-go-bulk-mailing-queue/internal/templates"
 )
 
 type Sender struct {

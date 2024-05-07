@@ -3,7 +3,7 @@ package api
 import (
 	"net/http"
 
-	"github.com/afonso-borges/mailflow/internal/queue"
+	"github.com/rohansen856/redis-go-bulk-mailing-queue/internal/queue"
 	"github.com/gin-gonic/gin"
 	"github.com/go-redis/redis/v8"
 )

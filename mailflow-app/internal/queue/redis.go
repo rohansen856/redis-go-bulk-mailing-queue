@@ -7,8 +7,8 @@ import (
 	"log"
 	"time"
 
-	"github.com/afonso-borges/mailflow/internal/config"
-	"github.com/afonso-borges/mailflow/internal/email"
+	"github.com/rohansen856/redis-go-bulk-mailing-queue/internal/config"
+	"github.com/rohansen856/redis-go-bulk-mailing-queue/internal/email"
 	"github.com/go-redis/redis/v8"
 )
 

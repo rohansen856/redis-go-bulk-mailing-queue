@@ -10,11 +10,11 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/afonso-borges/mailflow/api"
-	"github.com/afonso-borges/mailflow/internal/config"
-	"github.com/afonso-borges/mailflow/internal/email"
-	"github.com/afonso-borges/mailflow/internal/queue"
-	"github.com/afonso-borges/mailflow/internal/templates"
+	"github.com/rohansen856/redis-go-bulk-mailing-queue/api"
+	"github.com/rohansen856/redis-go-bulk-mailing-queue/internal/config"
+	"github.com/rohansen856/redis-go-bulk-mailing-queue/internal/email"
+	"github.com/rohansen856/redis-go-bulk-mailing-queue/internal/queue"
+	"github.com/rohansen856/redis-go-bulk-mailing-queue/internal/templates"
 	"github.com/gin-gonic/gin"
 	"github.com/joho/godotenv"
 )

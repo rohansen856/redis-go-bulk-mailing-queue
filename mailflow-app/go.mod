@@ -1,4 +1,4 @@
-module github.com/afonso-borges/mailflow
+module github.com/rohansen856/redis-go-bulk-mailing-queue
 
 go 1.24.1
 
